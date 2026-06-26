@@ -10,13 +10,23 @@ config_version=4
 
 [application]
 
-config/name="first deep in to the project"
+config/name="8 -"
+run/main_scene="res://scenes/level.tscn"
 config/icon="res://icon.png"
 
-[global]
+[display]
 
-wind=false
-window=false
+window/size/height=720
+window/stretch/mode="2d"
+window/stretch/aspect="keep"
+
+[input]
+
+restart={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":82,"unicode":0,"echo":false,"script":null)
+ ]
+}
 
 [physics]
 
@@ -28,7 +38,3 @@ quality/driver/driver_name="GLES2"
 vram_compression/import_etc=true
 vram_compression/import_etc2=false
 environment/default_environment="res://default_env.tres"
-
-[world]
-
-2d/cell_size=32
